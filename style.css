@@ -1,0 +1,404 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+    
+   
+}
+.snap{
+    position: absolute;
+    top: 5%;
+    left: 2%;
+
+}
+.snap img{
+    align-items:left;
+    text-align: left;
+
+    
+  
+}
+.fa-bars{
+    float: right;
+    position: absolute;
+    right: 3%;
+    top: 5%;
+    font-size: 20px;
+    text-align: center;
+    visibility: hidden;
+}
+.drop a{
+    text-align: center;
+}
+.navbar{
+    width: 85%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.navbar ul li{
+    list-style: none;
+    padding-left: 2rem;
+    margin-left: 10px;
+    line-height: 90px;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+}
+
+
+.register a{
+    
+    border: 2px solid black;
+    padding: 6px 12px;
+    border-radius: 10px;
+}
+.drop {
+    display: block;
+    position: relative;
+    text-align: center;
+   
+}
+.drop a{
+    text-align: center;
+    align-items: center;
+}
+.drop:hover .up {
+    display: block;
+    transition: all ease 0.6s;
+}
+.up{
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    width: 140px;
+    height: auto;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+    border-radius: 10px;
+    transition: all ease 0.6s;
+    background-color: white;
+    box-shadow: -3px -3px 6px rgba(0,0,0,0.5),3px 3px 8px rgba(0,0,0,0.5);
+    z-index: 30;
+
+}
+.up a{
+    text-align: center;
+    text-decoration: none;
+}
+.comapny{
+    display: block;
+    position: relative;
+    text-align: center;
+}
+.comapny:hover .down{
+    display: block;
+    transition: all ease 0.6s;
+}
+.down{
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 140px;
+    height: auto;
+    display: none; 
+    line-height: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: all ease 0.6s;
+    background-color: white;
+    box-shadow: -3px -3px 6px rgba(0,0,0,0.5),3px 3px 8px rgba(0,0,0,0.5);
+    z-index: 40;
+
+}
+.down a{
+    display: block;
+    text-align: center;
+}
+.menu{
+    display: none;
+}
+
+
+
+
+
+
+
+.main{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    margin: auto;
+}
+.item1{
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    position: relative;
+    margin-top: 8rem;
+   
+}
+.item1 h1{
+    font-size: 3.5rem;
+    text-align: left;
+}
+.item1 h2{
+    font-size: 2.5rem;
+    text-align: left;
+   
+}
+.item1 p{
+    font-size: 18px;
+   margin-top: 2.5rem;
+    text-align: justify;
+}
+.item1 button{
+    text-align: left;
+    margin-top: 3rem;
+    border: none;
+    position: absolute;
+    left: 0%;
+}
+.item1 button a{
+    padding:10px 12px;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+}
+.item1 button a:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.item2 img{
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    
+}
+.list ul{
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    align-items: center;
+   
+   
+}
+.list ul li{
+    list-style-type: none;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+  
+}
+.mobole-images{
+    display: none;
+
+}
+
+
+
+@media only screen and (min-width: 300px) and (max-width: 749px) {
+ 
+    .link{
+        width: 100%;
+        height: 90px;
+        background-color: white;
+        padding: 10%;
+    }
+   .fa-bars{
+    visibility: visible;
+   }
+   .navbar{
+    width: 40%;
+    height: auto;
+    margin: auto;
+    display: block;
+    justify-content: right;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    right: 3%;
+    top: 9%;
+    box-shadow: -3px -3px 5px rgba(0,0,0,0.5), 3px 3px 7px rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: all ease 0.6s;
+    cursor: pointer;
+    z-index: 20;
+   }
+   .navbar.current{
+    opacity: 1;
+    transition: all ease 0.6s;
+   }
+  
+   .navbar ul{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+       
+   }
+   .navbar ul li{
+    margin: auto;
+    text-align: center;
+    margin:-10px;
+    
+   }
+   .navbar ul li a{
+    text-align: center;
+    align-items: center;
+   }
+  
+
+    /* For portrait layouts only */
+    .item1{
+        width: 80%;
+        height: auto !important;
+        margin: auto;
+        margin-top: 2rem;
+    }
+   .items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+   }
+   .items h1{
+    font-size: 2.5rem;
+    padding:0px 6px;
+    
+   }
+   .items p{
+    text-align: center;
+
+
+   }
+
+  
+    .item1 button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        align-items: center;
+        margin: auto;
+        margin-top: 1rem;
+    }
+    .desktop-images{
+        display: none;
+    }
+    .mobole-images{
+        display: block;
+    }
+    .mobole-images img{
+        width: 100%;
+        height: auto;
+        margin: auto;
+
+    }
+    .main{
+        display: block;
+        justify-content: center;
+        width: 100%;
+        height: auto !important;
+        align-items: center;
+        margin: auto;
+    }
+    .list ul {
+        max-width: 100%;
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+        
+    }
+    .list ul{
+       
+    }
+    .list li{
+        margin-top: 3rem;
+        line-height: 20px;
+      
+     
+    }
+        
+    .list svg {
+        
+    margin: auto;
+    line-height: normal;
+    
+
+    }
+   
+    
+    .menu{
+        display: block;
+        justify-content: end;
+        align-items: end;
+        position: relative;
+    }
+    .menu svg{
+        margin-top: 1rem;
+        position: fixed;
+        left: 90%;
+        z-index: 70;
+      
+
+    }
+ 
+      
+
+  }
+  @media only screen and (min-width: 750px) and (max-width: 900px) {
+    .item2 img{
+        width: 375px;
+        height: 500px;
+        text-align: center;
+    }
+    .item1 h1{
+        color: black;
+        font-size: 3rem;
+    }
+    .item1 h2{
+        font-size: 2rem;
+
+    }
+    .item1 p{
+        font-size: 16px;
+        padding-right: 1rem;
+    }
+  
+}
